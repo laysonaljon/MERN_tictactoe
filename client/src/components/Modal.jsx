@@ -1,4 +1,6 @@
 import React from 'react';
+import Button from './Button';
+import { play, save } from '../assets';
 
 const Modal = ({ winner, resetBoard, handleSaveRecord }) => {
   const closeModal = () => {
@@ -54,22 +56,20 @@ const Modal = ({ winner, resetBoard, handleSaveRecord }) => {
               <h3 className="mb-5 text-lg font-normal text-gray-500">
                 {winner} won the game!
               </h3>
-              <button
-                data-modal-hide="popup-modal"
-                type="button"
-                className="text-white bg-green-500 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2"
-                onClick={handleSaveScores}
-              >
-                Save Scores
-              </button>
-              <button
-                data-modal-hide="popup-modal"
-                type="button"
-                className="text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2"
-                onClick={resetBoard}
-                >
-                Continue
-              </button>
+              
+
+              <Button
+              onClick={handleSaveScores}
+              title="Save Scores"
+              styles="text-white bg-green-500 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2"
+              icon={save}
+              />
+              <Button
+              onClick={resetBoard}
+              title="Continue"
+              styles="text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2"
+              icon={play}
+              />
 
             </div>
           </div>

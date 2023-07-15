@@ -4,6 +4,9 @@ import ScoreBoard from "./ScoreBoard";
 import Board from "./Board";
 import EnterName from "./EnterName";
 import Modal from "./Modal";
+import FormField from "./FormField";
+import ScoreCard from "./ScoreCard";
+import Loader from "./Loader";
 
 export{
     Button,
@@ -11,5 +14,8 @@ export{
     Board,
     ScoreBoard,
     EnterName, 
-    Modal
+    Modal,
+    FormField,
+    ScoreCard,
+    Loader
 }

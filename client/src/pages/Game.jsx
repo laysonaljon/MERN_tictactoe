@@ -128,7 +128,7 @@ const Game = () => {
 
   return (
     <div className="App">
-      <h1 className="text-gradient">Tic Tac Toe</h1>
+      <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] ss:leading-[100.8px] leading-[75px] text-gradient">TicTacToe</h1>
       <br />
       {!players.player1 && !players.player2 ? (
         <EnterName onSave={handleSaveNames} />
