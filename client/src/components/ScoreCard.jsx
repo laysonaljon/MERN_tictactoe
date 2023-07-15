@@ -8,7 +8,7 @@ const ScoreCard = ({player1name, player1score, player2name, player2score}) => {
     
     
     <div className="w-full bg-green-800 text-white rounded-lg flex-grow inline-flex items-center justify-center p-2 mb-2">
-      <h5 className="text-xl font-bold text-white">
+      <h5 className={`text-xl font-bold ${player1score > player2score ? 'text-red-400' : player2score > player1score ? 'text-blue-400' : 'text-white'}`}>
         {player1score > player2score
           ? `Winner: ${player1name}`
           : player2score > player1score
