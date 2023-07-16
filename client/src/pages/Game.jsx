@@ -108,7 +108,7 @@ const Game = () => {
         player2score: scores.oScore,
       };
 
-      const response = await fetch('https://tictactoe-j8a9.onrender.com//api/v1/score', {
+      const response = await fetch('https://tictactoe-j8a9.onrender.com/api/v1/score', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
